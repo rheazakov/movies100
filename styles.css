@@ -1,0 +1,129 @@
+/*navbar*/
+body
+      {
+          margin:0;
+          padding:0;
+          font-family:Assistant;
+          align:center;
+      }
+      nav
+      {
+        width:100%;
+        background:#263238 ;
+        margin-bottom: 20px;
+      }
+      ul{
+          width:80%;
+          margin:0 auto;
+          padding:0;
+      }
+
+      ul li
+      {
+          list-style:none;
+          display:inline-block;
+          padding: 20px;
+      }
+      
+      a{
+          color:#fff;
+          text-decoration:none;
+      }
+      ul li 
+      {
+          background-image: linear-gradient(#CC0033, #CC0033);
+          background-size: 0 5px, auto;
+          background-repeat: no-repeat;
+          background-position: center bottom;
+          transition: all .2s ease-out;
+      }
+      ul li:hover
+      {
+        background-size: 100% 5px, auto;
+      }
+      .toggle
+      {
+          width:100%;
+          padding: 10px 20px;
+          background: #212121 ;
+          text-align:right;
+          box-sizing:border-box;
+          color:#fff;
+          font-size:20px;
+          display:none;
+      }
+      @media (max-width:768px)
+      {
+        .toggle
+        {
+            display:block;
+        }
+       ul{
+          width:100px;
+       }
+       ul li
+       {
+          display:block;
+          text-align:center;
+       
+       } }
+
+/*postere film*/
+.row
+{
+    display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+.column img {
+    margin-top: 10px;
+    vertical-align: middle;
+  }
+
+  img{
+      width:200px;
+      height:auto;
+  }
+  img.movie-details-img {
+    width:200px;
+    height:auto;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+ 
+  .movie-picture {
+      cursor: pointer;
+  }
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  @media screen and (max-width: 1000px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  
